@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anushka rawat</title>
-    <link rel ="stylesheet" href="styleprojext.css">
+    <link rel="stylesheet" href="styleprojext.css">
     <script src="https://kit.fontawesome.com/6801fb1ab4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
-    <div id="header">  
-    <div class="container">
-        <nav>
-            <img src ="protfolio_image/logo.png" class ="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">contact</a></li>
-                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-    </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2>Protfolio</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="header-text">
-            <p></p>
-            <h1>Hi, I'm <br><span>Anushka</span> rawat</h1>
+            <br>
+            <h3>Hi, I'm </h3>
+            <br>
+            <h1><span>Anushka</span> rawat</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>that Welcomes challenges and architects Solutions,<br>Specialized in building highly performance
+                applications that solve real-world problems</p>
+            <br>
+
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/anushka-rawat23160900/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Anushkrawat16"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:anushka.rawat.hld@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+
+            </div>
+            <a href="AnushkaRawat_resume.pdf" download class="btn btn2">Download CV</a>
         </div>
     </div>
     <!-------about-->
@@ -33,211 +49,173 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="protfolio_image/user.jpeg">
+                    <img src="protfolio_image/girlll.jpg">
                 </div>
-                    <div class="about-col-2">
-                     <h1 class="sub-title">About me</h1>
-                     <p>Electronics and Communication Engineering Professional | Dedicated to Innovation and Problem-Solving in Technology | Strong in design and integration with intuitive problem-solving skills. Proficient in C\C++,HTML, CSS, JavaScript, Java & SQL Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions.</p>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About me</h1>
+                    <br>
+                    <p>Electronics and Communication Engineering Professional, Dedicated to Innovation and
+                        Problem-Solving in Technology , Strong in design and integration with intuitive problem-solving
+                        skills. Proficient in C\C++,HTML, CSS, JavaScript, Java & SQL Passionate about implementing and
+                        launching new projects. Ability to translate business requirements into technical solutions.</p>
 
-                         <div class="tab-titles">
-                            <p class = "tab-links active-link" onclick="opentab('skills')">skills</p>
-                            <p class = "tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class = "tab-links" onclick="opentab('education')">Education</p>
-                         </div>
-                         <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                            <li><span>JAVA</span><br>Object oriented programming |Data
-                                structure| Algorithms</li>
-                            <li><span>JavaScript</span><br>API handling ,Async-await,DOM</li>
-                            <li><span>HTML/CSS</span><br>tags</li>
-                            <li><span>c++</span><br>Object oriented programming |Data
-                                structure| Algorithms</li>
-                            <li><span></span><br></li>
-                            </ul>
-                         </div>
-                         <div class="tab-contents" id="education">
-                            <ul>
-                            <li><span>Bipin tripathi kumaon institute of technology</span><br>btech(Electronics and communication engineering)</li>
-                            <li><span>Goverment polytechnic Nainital</span><br>Electronics engineering</li>
-                            <li><span>Doon public school</span><br>high school
-                        </ul>
-                         </div>
-                         <div class="tab-contents" id="experience">
-                            <ul>
-                            <li><span>ARYABHATTA RESEARCH INSTITUTE OF OBSERVATIONAL
-                                SCIENCE, NAINITAL </span><br>| project intern</li>
-                            <li><span>NATIONAL INSTITUTE OF ELECTRONICS AND INFORMATION
-                                TECHNOLOGY, HARIDWAR</span><br> Training</li>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Software Developer inetrn</span><br>Internpixel (Jan 2024-March 2024)</li>
+                            <li><span> Project intern</span><br> Aryabhatta Research Institute of observational
+                                Science, Nainital</li>
                             <li><span></span><br></li>
                         </ul>
-                         </div>
-                     </div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java, JavaScript, HTML/CSS, MySQL</li>
+                            <li><span>Framework</span><br>React.js, Springboot,Figma, BootStrap</li>
+                            <li><span>Tools</span><br>VsCode, IntelliJ, Eclipse, Git, Github, MATLAB </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bipin tripathi kumaon institute of technology</span><br>Btech(Electronics and
+                                communication engineering)<br>2020-2023</li>
+                            <li><span>Goverment polytechnic Nainital</span><br>Electronics engineering<br>2017-1019</li>
+                            <li><span>Doon public school</span><br>High school <br>2016-2017 </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-   <!---------------serices------------>
-   <div id="services">
-     <div class="container">
-        <h1 class="sub-title">skills</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-leaf"></i>
-               <h2> Master Spring Boot 3 & Spring Framework 6 with Java
-            </h2>
-               <p> JAVA springbootfull stack cloud developer.<br>
-                learned AWS react Docker, Spring data JPA & Spring security
-                </p>
-               <a href="#">Learn more</a>
-            </div>
-            <div>
-                
-                <i class="fa-brands fa-java"></i>
-                <h2>ADVANCE JAVA</h2>
-                <p>
-                    NET COM technologies
-                    |Object oriented programming |Data
-                    structure| Algorithms|
-                    
-                    </p>
-                <a href="#">Learn more</a>
-             </div>
-             <div>
-                <i class="fa-solid fa-database"></i>
-                <h2>DATA ANALYTIC ESSENTIALS by CISCO</h2>
-                <p>
-                    
-                    |Microsoft Excel | SQL | Tableau |
-                    RDBMS| DBMS</p>
-                <a href="#">Learn more</a>
-             </div>
-        </div>
-     </div>
-   </div>
-   <!-----------portfolio------------>
-   <div id ="portfolio">
-   <div class="container">
-    <h1 class="sub-title">projects</h1>
-    <div class="work-list">
-        <div class="work">
-            <img src ="images/tic-tac-toe.png">
-            <div class="layer">
-                <h3>tic tac toe</h3>
-                <p>
-                    Developed a fully functional Tic Tac Toe game using HTML, CSS, and JavaScript, demonstrating proficiency in front-end web development.<br>
-                    - Designed and implemented interactive features, ensuring a user-friendly experience and responsive design.<br>
-                    - Independently conceptualized and executed the project from inception to completion, showcasing problem-solving and project management skills.<br><br></p>
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-        <div class="work">
-            <img src ="images/employee-management-system.jpg">
-            <div class="layer">
-                <h3>EMPLOYMENT MANAGEMENT SYSTEM</h3>
-                <p> JAVA |NET BEAM| MY SQL<br>
-                    • Created an application where all the employment details will be managed and
-                    MYSQL manages the database</p>
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-        <div class="work">
-            <img src ="images/wireless.jpeg">   
-            <div class="layer">
-                <h3>ENERGY EFFICIENT ROUTING PROTOCOL USING WIRELESS
-                    SENSOR NETWORK</h3>
-                <p>Conduct a comparative analysis of the LEACH, SEP, and ZSEP
-                    protocols<br>
-                    • evaluate metrics such as alive nodes, dead nodes, and packets
-                    transmitted to the base station, coded with MATLAB, C, C++,
-                    Python, JAVA</p>
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <!---------------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Languages</h3>
+                    <br>
+
+                    <ul>
+                        <li>Java</li>
+                        <li> JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>MySQL</li>
+                    </ul>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h3>Framework</h3>
+                    <br>
+                    <ul>
+                        <li>React.js</li>
+                        <li> Springboot</li>
+                        <li>Figma</li>
+                        <li>BootStrap</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Tools</h3>
+                    <br>
+                    <ul>
+                        <li>VsCode</li>
+                        <li>IntelliJ</li>
+                        <li>Eclipse</li>
+                        <li>Git/Github</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <a href="=#" class="btn">see more</a>
-   </div>
-</div>
-<!-----------------contact----->      
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                 <h1 class="sub-title">
-                  Contact me   
-                 </h1>
-                 <p><i class="fa-solid fa-paper-plane"></i> Anushka.rawat.hld@gmail.com</p>
-                 <p><i class="fa-solid fa-phone"></i>7703968089</p>
-                 
-                 <div class="social-icon">
-                    <a href="https://www.linkedin.com/in/anushka-rawat23160900/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Anushkrawat16"><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-envelope"></i></a>
-                 </div>
-                 <a href="Anushkarawat_resume.pdf" download class="btn btn2">Download CV</a>
+    <!-----------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/chatt_app.jpg">
+                    <div class="layer">
+                        <h3>React Video Call App</h3>
+                        <p> React.js,  CSS , Javascript,HTML<br><br>
+                            -Developed a real-time multi-participant video call app<br>
+                            -Utilized WebRTC for browser-based peer-to-peer communication and Socket.IO for real-time client communication<br>
+                            -For optimal user experience (UX), streamlined the interface design to facilitate easy joining and management of calls</p>
+                        <a href="https://github.com/Anushkrawat16/Video_chatApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/employee-management-system.jpg">
+                    <div class="layer">
+                        <h3>User MANAGEMENT SYSTEM</h3>
+                        <p> SpringBoot ,React.js,MySQL,Postman <br>
+                             Created a Java web application using the Spring Boot framework, Spring MVC, Spring Data JPA, Rest API, and MySQL database to perform CRUD operation.</p>
+                        <a href="https://github.com/Anushkrawat16/UserManagementSystem "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/car.jpg">
+                    <div class="layer">
+                        <h3>Car Rental System Project</h3>
+                        <p>SpringBoot , React.js, Bootstrap , MySQL,Postman<br>
+                             a Java application utilizing Spring Boot, Spring Data, and Rest API, integrated with a MySQL database<br>
+                            Developed a Java-based Car Rental System with a robust database to manage and store information on available cars, customers, rental details, and return specifics at the owner's site</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-right">
-            <form name="submit-to-google-sheet">
-                <input type="text" name ="Name" placeholder ="your Name" required>
-                <input type="email" name="email" placeholder="Your Email" reuired>
-                <textarea name="Message" rows = "6" placeholder ="Your Message"></textarea>
-                <button type="submit" class="btn btn2">submit</button>
-            </form>
-            
+            <a href="=#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-----------------contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">
+                        Contact me
+                    </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Anushka.rawat.hld@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7703968089</p>
+                    <br>
+
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/anushka-rawat23160900/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Anushkrawat16"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-envelope"></i></a>
+                    </div>
+                    <a href="AnushkaRawat_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" reuired>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+
+                </div>
+
+            </div>
+
         </div>
 
-        </div>
 
     </div>
-   
-
     </div>
-</div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents= document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-                
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-    </script>
-    <script>
-       
-       var sidemenu = document.getElementById("sidemenu");
-
-       function openmenu(){
-         sidemenu.style.right = "0";
-       }
-       function openmenu(){
-         sidemenu.style.right = "-200px";
-       }
-
-    </script>
-    <script>
-        const scriptURL = https//script.google.com/macros/s/AKfycbz5JovzE5dIG0zAqH4y2-GDQuPmTP4wxnf0CmdT8kF1OHcJgk5jHYVZ8KjCVijUjbb_yQ/exec
-        const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message sent sucessfully"
-                setTimeout(function(){
-                    msg.innerHTML =""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+    <script src="main.js"></script>
 </body>
+
 </html>
